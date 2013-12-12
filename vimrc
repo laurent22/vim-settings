@@ -1,9 +1,9 @@
-" For Go support
-filetype off
-filetype plugin indent off
-set runtimepath+=/usr/local/go/misc/vim
-filetype plugin indent on
 syntax on
+filetype plugin indent on
+" For Go support
+let go_highlight_array_whitespace_error=0
+let go_highlight_space_tab_error=0
+let go_highlight_trailing_whitespace_error=0 
 " MXML/AS files
 au BufNewFile,BufRead *.mxml set filetype=mxml
 au BufNewFile,BufRead *.as set filetype=actionscript
