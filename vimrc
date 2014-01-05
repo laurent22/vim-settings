@@ -1,14 +1,16 @@
-syntax on
-filetype plugin indent on
 " For Go support
-let go_highlight_array_whitespace_error=0
-let go_highlight_space_tab_error=0
-let go_highlight_trailing_whitespace_error=0 
+filetype off
+filetype plugin indent off
+set runtimepath+=/usr/local/go/misc/vim
+filetype plugin indent on
+syntax on
 " MXML/AS files
 au BufNewFile,BufRead *.mxml set filetype=mxml
 au BufNewFile,BufRead *.as set filetype=actionscript
 " 256 colors
 set t_Co=256
+" Highlight search terms
+set hlsearch
 " Restore cursor to latest position when re-opening a file
 if has("autocmd")
 	au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
