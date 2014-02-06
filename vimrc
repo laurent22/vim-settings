@@ -38,3 +38,6 @@ set statusline+=%8*\ %=\ row:%l/%L\ (%03p%%)\             "Rownumber/total (%)
 set statusline+=%9*\ col:%03c\                            "Colnr
 
 set laststatus=2    " Always show the status bar
+
+" Allow saving with sudo
+cmap w!! w !sudo tee %
