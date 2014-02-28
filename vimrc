@@ -1,3 +1,5 @@
+" Make sure VIM doesn't automatically add an EOL
+set binary
 " For Go support
 filetype off
 filetype plugin indent off
