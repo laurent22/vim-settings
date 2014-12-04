@@ -20,7 +20,7 @@ endif
 set tabstop=4
 " Default to not read-only in vimdiff
 set noro
-colorscheme monokai
+" colorscheme monokai
 " Status bar
 hi User1 guifg=#ffdad8  guibg=#880c0e
 hi User2 guifg=#000000  guibg=#F4905C
@@ -43,3 +43,6 @@ set laststatus=2    " Always show the status bar
 
 " Allow saving with sudo
 cmap w!! w !sudo tee %
+
+" Make VIM detect .md files as markdown files
+au BufRead,BufNewFile *.md set filetype=markdown
