@@ -46,3 +46,6 @@ cmap w!! w !sudo tee %
 
 " Make VIM detect .md files as markdown files
 au BufRead,BufNewFile *.md set filetype=markdown
+
+" Ignore white space in vimdiff
+set diffopt+=iwhite
