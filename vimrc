@@ -49,3 +49,7 @@ au BufRead,BufNewFile *.md set filetype=markdown
 
 " Ignore white space in vimdiff
 set diffopt+=iwhite
+
+if &diff
+	colorscheme vimdiff
+endif
